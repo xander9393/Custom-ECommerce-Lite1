@@ -1,0 +1,59 @@
+.contact-body,
+.faq-body,
+.terms-body,
+.privacy-body,
+.returns-body,
+.shipping-body,
+.cart-body {
+  padding-bottom: 2rem;
+  border-style: solid;
+  border-color: #ededed;
+  border-width: 1px 0 1px 0;
+  color: #777;
+}
+.contact-body li,
+.faq-body li,
+.terms-body li,
+.privacy-body li,
+.returns-body li,
+.shipping-body li {
+  margin-bottom: 0.6em;
+}
+.contact-body .optimus,
+.faq-body .optimus,
+.terms-body .optimus,
+.privacy-body .optimus,
+.returns-body .optimus,
+.shipping-body .optimus {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 2rem;
+}
+.contact-body form {
+  margin: 0 auto;
+  width: 50%;
+}
+.contact-body label {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.contact-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 2rem;
+}
+.contact-btn:hover {
+  background-color: #222222;
+}
+.contact-btn:active {
+  background-color: #000000;
+}
+
+.form-select:focus,
+.form-control:focus,
+.form-check-input:focus {
+  outline: none;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 5px #8c8c8c;
+}

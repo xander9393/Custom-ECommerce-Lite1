@@ -1,0 +1,232 @@
+.cart-body {
+  display: flex;
+}
+.product-table,
+.total-price {
+  border: 1px solid #e6e6e6;
+  margin-top: 2rem;
+}
+.product-table td {
+  vertical-align: middle;
+}
+.product-table {
+  width: 65%;
+  margin-right: 3rem;
+  text-align: center;
+  overflow: auto;
+}
+.product-table th:nth-child(1) {
+  text-align: start;
+}
+.product-table td:nth-child(1) {
+  text-align: start;
+}
+.product-table tbody tr {
+  padding: 2rem 0;
+}
+.checkout-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
+.total-price {
+  width: 35%;
+  padding: 2rem;
+}
+@media (max-width: 805px) {
+  .checkout-btn {
+    padding: 0.5rem 2rem;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 768px) {
+  .cart-body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-table {
+    width: 100%;
+    margin: 0;
+  }
+  .total-price {
+    width: 100%;
+  }
+  .checkout-btn {
+    font-size: 1em;
+  }
+}
+
+/* Quantity input button */
+.skin-2 .num-in {
+  background: #ffffff;
+  height: 40px;
+  width: 120px;
+  float: left;
+}
+.skin-2 .num-in span {
+  width: 40%;
+  display: block;
+  height: 40px;
+  float: left;
+  position: relative;
+}
+.skin-2 .num-in span:before,
+.skin-2 .num-in span:after {
+  content: "";
+  position: absolute;
+  background-color: #667780;
+  height: 2px;
+  width: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -5px;
+}
+.skin-2 .num-in span.plus:after {
+  transform: rotate(90deg);
+}
+.skin-2 .num-in input {
+  float: left;
+  width: 20%;
+  height: 40px;
+  border: none;
+  text-align: center;
+}
+
+/* contact_information.php */
+.contact-information .contact-information-content {
+  display: flex;
+  flex-direction: row;
+}
+.contact-information-body,
+.cart-shipping-body,
+.side-cart {
+  width: 50%;
+}
+.contact-information-body,
+.cart-shipping-body {
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.side-cart {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+.form-floating {
+  font-size: 0.8em;
+}
+.contact-information-body .login-btn,
+.cart-shipping-body .btn.login-btn {
+  margin: 2rem 0;
+}
+.side-cart .table {
+  vertical-align: middle;
+  text-align: center;
+}
+.calc {
+  margin-top: 3rem;
+}
+.sub-total,
+.shipping,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.pre-total {
+  border-bottom: 1px solid #dedede;
+}
+.sub-total p {
+  margin: 0;
+}
+.cart-total-text {
+  font-size: 0.9em;
+  color: #535353;
+}
+.cart-total-number {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.total .cart-total-text {
+  font-size: 1em;
+  color: #3d3d3d;
+}
+.total .cart-total-number {
+  font-size: 1.5em;
+}
+.breadcrumb-item {
+  font-size: 0.8em;
+}
+.breadcrumb-item a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .contact-information .contact-information-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-information-body,
+  .side-cart,
+  .cart-shipping-body {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/** shipping.php */
+.cart-shipping-table {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  border: 1px solid #96969699;
+  border-radius: 7px;
+  padding: 0.9em 1.1em;
+}
+.cart-shipping-contact,
+.cart-shipping-to {
+  display: flex;
+  flex-direction: row;
+  padding: 0.7em 0;
+}
+.cart-shipping-contact {
+  border-bottom: 1px solid #96969699;
+}
+
+.row-cart-shipping-table {
+  color: #737373;
+  padding-right: 1.1428571429em;
+}
+.row-information {
+  flex: 5;
+}
+a.btn.login-btn:hover {
+  color: #ffffff;
+}
+
+/** orderplaced.php */
+.greetings-line {
+  border-top: 1px solid #ededed;
+}
+.greetings {
+  margin: 4em 10em;
+  border: 5px inset rgba(97, 107, 101, 0.77);
+  border-radius: 0px 26px 1px 26px;
+  text-align: center;
+  font-size: 2em;
+}
+.greetings p {
+  margin: 1em 0;
+}
+.greetings-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.greetings-btn p a {
+  color: #000000;
+  text-decoration: none;
+  /* font-weight: 600; */
+}
+.greetings-btn p a:hover {
+  text-decoration: underline;
+}
